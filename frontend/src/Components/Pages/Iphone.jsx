@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { images } from "../../assets/image";
-import { iphones} from "../Db";
+import { iphones } from "../../db";
 
 function Iphone() {
   // State to store products coming from the backend
@@ -12,8 +12,8 @@ function Iphone() {
     // fetch("../Db.js") // Fetching all iPhone products from backend API
     //   .then((res) => res.json()) // convert the response to JSON
     //   .then((products) => {
-        setProducts(iphones); // store them in state
-      // });
+    setProducts(iphones); // store them in state
+    // });
   }, []);
 
   return (
