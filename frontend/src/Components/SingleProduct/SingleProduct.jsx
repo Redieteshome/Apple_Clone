@@ -8,12 +8,12 @@ function SingleProduct() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/iphones")
+    fetch("https://apple-backend-z71x.onrender.com")
       .then((res) => res.json())
       .then((data) => {
         const singleProduct = data.filter(
           (item) => item.product_id === Number(pid)
-        //   (item) => item.product_name === productID
+          //   (item) => item.product_name === productID
         );
         setProducts(singleProduct);
       });

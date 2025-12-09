@@ -32,10 +32,15 @@ img {
 .navbar-toggler {
 	color: #fff;
 }
+
+
 .nav-item {
 	text-align: left !important;
 	padding: 4px 0;
 	border-bottom: 1px solid #4b4b4b;
+}
+.nav-item:hover{
+	color: white !important ;
 }
 
 /* Footer Styling */
