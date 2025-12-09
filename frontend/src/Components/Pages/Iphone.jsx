@@ -9,7 +9,7 @@ function Iphone() {
 
   // useEffect runs only once when the component loads (because of empty [])
   useEffect(() => {
-    fetch("https://apple-backend-z71x.onrender.com") // Fetching all iPhone products from backend API
+    fetch("https://apple-backend-z71x.onrender.com/iphones") // Fetching all iPhone products from backend API
       .then((res) => res.json()) // convert the response to JSON
       .then((products) => {
         setProducts(products); // store them in state

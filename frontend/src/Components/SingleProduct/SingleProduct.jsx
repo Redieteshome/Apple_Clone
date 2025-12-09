@@ -8,7 +8,7 @@ function SingleProduct() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://apple-backend-z71x.onrender.com")
+    fetch("https://apple-backend-z71x.onrender.com/iphones")
       .then((res) => res.json())
       .then((data) => {
         const singleProduct = data.filter(
